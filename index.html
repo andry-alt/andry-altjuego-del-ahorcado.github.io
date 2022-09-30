@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <title>Juego del Ahorcardo</title>
+</head>
+<body>
+    
+</body>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+    <section>   
+        <img src="Vector.png">
+   </section>
+
+    <header id="header">
+  
+       <!--Botones de inicio-->
+       <section id="botones-home">
+           <input class="boton1" type="submit" value="Iniciar juego " id="iniciarJuego" onclick="iniciarJuego()" placeholder="Iniciar juego"></input>
+           <input class="boton2" type="button" value="Nueva palabra" id="crearPalabra" onclick="pantallaAgregarPalabra()" placeholder="agregue una palabra"></input></a>
+       </section>
+    </header>
+     <!--Agregar una nueva palabra-->
+    <section id="agregarPalabra">
+      <input id="input-nuevaPalabra" class="nuevaPalabra" maxlength="8" placeholder="Escriba una palabra">
+      <div class = "form-group">
+        <img src="!.png" alt="imagen de alerta" class="img-alert">
+        <label for="input-text">Máx. 8 caracteres</label>
+      </div>
+      <!--botones de agregar palabra-->
+      <div id="botones-agregarPalabra" class="botones-AggPalabra">
+        <input type="submit" class="botonAzul-aggPalabra" value="Guardar y empezar" id="boton-guardar">
+        <input type="submit" class="botonBlanco-aggPalabra" value="Cancelar" id="cancelarJuego">
+
+      </div>
+    </section>
+
+    <!--Espacio del ahorcado -->
+    <section id="empieza-Juego" class="canvas">
+      <canvas id="juego" width="1200" height="1200" ><input input-teclado></canvas>
+      <div class="lineas">
+      </div>
+      <div id="botones-delJuego">
+        <input type="submit" class="botonAzul" value="Nuevo Juego" id="boton-nuevoJuego">
+        <input type="submit" class="botonBlanco" value="Salir" id="botonSalir">
+      </div>
+
+   <footer id="footer">
+     <p>Creado por Andry Goldcheid </p>
+   </footer>
+   
+<script src="horca.js"></script>
+<script src="canvas.js"></script>
+
+
+
+</body>
+</html>
